@@ -15,23 +15,25 @@ layout: default
 
  {% include nav.html %} 
 
-<div class="row">
-  <div class="large-12 columns">
-    <div class="home">
+<div class="contentarea">
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="home">
 
-      <ul class="post-list">
-        {% for post in site.posts %}
-          <ul>
-            <h2>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-              </h2>
-              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-              <p>{{ post.content }}</p>
-              <hr>
-          </ul>
-        {% endfor %}
-      </ul>
+        <ul class="post-list">
+          {% for post in site.posts %}
+            <ul>
+              <h2>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <p>{{ post.content }}</p>
+                <hr>
+            </ul>
+          {% endfor %}
+        </ul>
 
-    </div>
-  <div>
+      </div>
+    <div>
+  </div>
 </div>
