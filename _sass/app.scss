@@ -1,5 +1,5 @@
 .banner {
-	height: 70%;
+	height: 600px;
 	background-image: url('/img/banner.jpg');
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -7,6 +7,7 @@
 
 .bannertext {
  h1 {
+ 	font-size: 2em;
  	color: white;
  }
 }
